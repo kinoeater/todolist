@@ -4,6 +4,7 @@ const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const filterOption = document.querySelector(".filter-todo");
+const deleteAllButton = document.querySelector(".delete-all");
 
 eventListen();
 
@@ -13,6 +14,7 @@ function eventListen() {
   todoButton.addEventListener("click", addTodo);
   todoList.addEventListener("click", deleteCheck);
   filterOption.addEventListener("click", fiterTodo);
+  deleteAllButton.addEventListener("click",deleteAll)
 }
 
 //Functions
@@ -201,3 +203,18 @@ todos.forEach(element => {
 
 });
 } 
+
+function deleteAll(e) {
+  const todos = todoList.children;
+  console.log(todos);
+
+  if(confirm("Tümünü silmek istediğinizden emin misiniz?")) {
+    console.log(todos);
+    //delete all tasks
+    while(todoList.firstElementChild != null ) {
+      todoList.removeChild(todoList.firstElementChild);
+    }
+    localStorage.removeItem("todos");
+   
+  }
+}

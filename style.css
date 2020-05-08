@@ -29,7 +29,7 @@ form button {
   padding: 0.5rem;
   font-size: 1.5rem;
   border: none;
-  background: rgb(225, 235, 235);
+  background:rgb(178, 209, 236);
 }
 
 
@@ -39,6 +39,28 @@ form button {
   background: rgb(225, 235, 235);
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-all  {
+  background-color: rgb(224, 48, 136); /* Green */
+  border: none;
+  border-radius: 3%;
+   color: rgb(178, 209, 236);
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+
+}
+
+.fa-trash-alt {
+  padding-left: 1rem;
 }
 
 form button:hover {
@@ -61,7 +83,7 @@ form button:hover {
 
   margin: 0.3rem;
   height: 2.5rem;
-  background:aliceblue;
+  background: rgb(178, 209, 236);
   color: black;
   font-size: 1.5rem;
   display: flex;
@@ -76,6 +98,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
+  
   margin: 0.5rem;
   border: none;
   border-radius: 30%;
@@ -86,20 +109,21 @@ form button:hover {
 
 .complete-btn {
   background: rgb(17, 197, 17);
-  color: aliceblue;
+  color: rgb(178, 209, 236);
 }
 
 .trash-btn {
-  background: rgb(27, 154, 177);
-  color: aliceblue;
+  background: rgb(92, 57, 77);
+  color: rgb(178, 209, 236);
 }
 
 .todo-button {
-  background: rgb(48, 51, 209);
+  background: rgb(178, 209, 236);
 }
 
 .todo-item {
   padding: 0rem 0.5rem;
+  font-size: 1rem;
 
 }
 
@@ -115,7 +139,7 @@ form button:hover {
 }
 
 .fall {
-  transform: translateY(30rem) rotateZ(20deg);
+  transform: translateY(30rem) rotateZ(25deg);
 }
 
 select {
@@ -131,24 +155,27 @@ border: none;
   margin: 1rem;
   position: relative;
   overflow: hidden;
+  font-size: 1rem;
+  font-weight: bold;
 
 }
 
 select {
-  color: #d88771;
+  color: #da8b15;
   width: 10rem;
   cursor: pointer;
   padding: 1rem;
+  font-size: 1rem ;
+  background: rgb(178, 209, 236);
 }
 
 .select::after {
   content: "\25BC";
   position: absolute;
-  background:rgb(240, 167, 71); 
+  background:rgb(50, 185, 152); 
   top: 0;
   right: 0;
   padding: 1rem;
-  
   pointer-events: none;
 }
 

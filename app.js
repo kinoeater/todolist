@@ -206,15 +206,22 @@ todos.forEach(element => {
 
 function deleteAll(e) {
   const todos = todoList.children;
-  console.log(todos);
+  
+  if(todoList.children.length != 0 ) {
 
-  if(confirm("Tümünü silmek istediğinizden emin misiniz?")) {
-    console.log(todos);
-    //delete all tasks
-    while(todoList.firstElementChild != null ) {
-      todoList.removeChild(todoList.firstElementChild);
+    console.log(todoList.children.length);
+
+    if(confirm("Tümünü silmek istediğinizden emin misiniz?")) {
+      //console.log(todos);
+      //delete all tasks
+      while(todoList.firstElementChild != null ) {
+        todoList.removeChild(todoList.firstElementChild);
+      }
+      localStorage.removeItem("todos");
+     
     }
-    localStorage.removeItem("todos");
-   
+
   }
+
+  
 }

@@ -27,12 +27,10 @@ form {
 form input,
 form button {
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: none;
-  background:rgb(178, 209, 236);
+  background: rgb(178, 209, 236);
 }
-
-
 
 form button {
   color: #d88771;
@@ -46,17 +44,16 @@ form button {
   justify-content: center;
 }
 
-.delete-all  {
+.delete-all {
   background-color: rgb(224, 48, 136); /* Green */
   border: none;
   border-radius: 3%;
-   color: rgb(178, 209, 236);
+  color: rgb(178, 209, 236);
   padding: 0.5rem 0.5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
-
 }
 
 .fa-trash-alt {
@@ -80,7 +77,6 @@ form button:hover {
 }
 
 .todo {
-
   margin: 0.3rem;
   height: 2.5rem;
   background: rgb(178, 209, 236);
@@ -92,13 +88,17 @@ form button:hover {
   transition: all 0.5s ease;
 }
 
-.todo li {
+.todo-item {
   flex: 1;
+  height: 4vh;
+  width: 15rem;
+
+  padding: 0rem 0.5rem;
+  font-size: 1rem;
 }
 
 .trash-btn,
 .complete-btn {
-  
   margin: 0.5rem;
   border: none;
   border-radius: 30%;
@@ -121,15 +121,9 @@ form button:hover {
   background: rgb(178, 209, 236);
 }
 
-.todo-item {
-  padding: 0rem 0.5rem;
-  font-size: 1rem;
-
-}
-
 .fa-trash,
-.fa-check {
-
+.fa-check,
+.fa-trash-alt {
   pointer-events: none;
 }
 
@@ -143,21 +137,19 @@ form button:hover {
 }
 
 select {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-outline: none;
-border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
 }
 
 .select {
-
   margin: 1rem;
   position: relative;
   overflow: hidden;
   font-size: 1rem;
   font-weight: bold;
-
 }
 
 select {
@@ -165,14 +157,14 @@ select {
   width: 10rem;
   cursor: pointer;
   padding: 1rem;
-  font-size: 1rem ;
+  font-size: 1rem;
   background: rgb(178, 209, 236);
 }
 
 .select::after {
   content: "\25BC";
   position: absolute;
-  background:rgb(50, 185, 152); 
+  background: rgb(50, 185, 152);
   top: 0;
   right: 0;
   padding: 1rem;
@@ -180,8 +172,6 @@ select {
 }
 
 .select:hover::after {
-
   background: aliceblue;
   color: #d88771;
-
 }
